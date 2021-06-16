@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  python38:
+    image: python:3.8
+    volumes:
+      - .:/usr/src/myapp
+    working_dir: /usr/src/myapp
+    # command: /bin/bash
+    ports:
+      - 8100:8000
+    tty: true
